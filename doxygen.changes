@@ -1,3 +1,7 @@
+* Sun Jan 08 2012 Marko Saukko <marko.saukko@gmail.com> - 1.7.6.1
+- Update to version 1.7.6.1
+- Added .yaml for spectacle.
+
 * Sat Aug 20 2011 Carsten Munk <carsten@maemo.org> - 1.7.4
 - Drop timestamping of docs, we have those in rpm headers anyway.
   People can enable it independently if they want it. Should save
