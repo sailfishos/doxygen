@@ -9,6 +9,7 @@ BuildRequires:  gettext
 BuildRequires:  flex
 BuildRequires:  bison
 BuildRequires:  cmake
+BuildRequires:  python3-base
 
 %description
 Doxygen is a documentation system for C, C++, Java, and IDL. It can
