@@ -1,6 +1,6 @@
 Name:       doxygen
 Summary:    Automated C, C++, and Java Documentation Generator
-Version:    0
+Version:    1.13.2
 Release:    1
 License:    GPLv2+
 URL:        https://github.com/sailfishos/doxygen/
@@ -24,12 +24,13 @@ as well. An executable for Windows 95/NT is also available.
 
 %build
 unset QTDIR
-%cmake
-%make_build
+%cmake -DBUILD_SHARED_LIBS=OFF
+%cmake_build
 
 %install
-%make_install
+%cmake_install
+
+rm -Rf %{buildroot}%{_mandir}
 
 %files
-%defattr(-,root,root,-)
 %{_bindir}/doxygen
